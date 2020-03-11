@@ -1,4 +1,25 @@
 /*
+
+    Font faces
+
+
+*/
+@font-face{
+    font-family: "Inter web";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: "Inter web";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
+
+
+
+/*
     Elements: Page
     ---
     Default markup for page level elements
@@ -7,8 +28,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: "Inter web", Helvetica, arial, sans-serif;
+    color: #5C6366;
     padding: 48px 24px 24px;
 }
 
@@ -25,7 +46,7 @@ body {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #B3E8FF;
     color: white;
     text-shadow: none;
 }
@@ -47,8 +68,12 @@ img {
     Default markup for typographic elements
 */
 
+h1, h2, h3 {
+    color:#17181A;
+}
+
 h1 {
-    font-family: "Times New Roman", serif;
+    /* font-family: "Times New Roman", serif; */
     font-size: 36px;
     font-weight: normal;
     line-height: 40px;
@@ -123,18 +148,15 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #00A1E6;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
-a:active {
-    color: BlueViolet;
-}
-
+a:active,
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #1AFFBA;
 }
 
 /* Small devices (landscape phones, 576px and up) */
